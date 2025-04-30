@@ -1,0 +1,9 @@
+### TEST GET / WEBSITE
+GET http://localhost:3000
+
+### TEST GET /dashboard WEBSITE
+GET http://localhost:3000/dashboard
+
+### DATA POST /api/data
+GET http://localhost:3000/api/data
+
