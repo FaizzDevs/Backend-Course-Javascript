@@ -15,7 +15,15 @@ app.get("/", (req, res) => {
     // console.log("Yeay aku berhasil", req.method);
     // res.sendStatus(201);
 
-    res.send("<h1>Homepage</h1>");
+    // res.send("<h1>Homepage</h1>");
+
+    res.send(
+        `<body
+        style="background:pink; color:blue;">
+        <h1>DATA:</h1>
+            <p>${JSON.stringify(data)}</p>
+        </body>`
+    )
 });
 
 app.get("/dashboard", (req, res) => {
@@ -24,6 +32,7 @@ app.get("/dashboard", (req, res) => {
 })
 
 // TYPE 2 BAGIAN API
+// CRUD - create-post read-get update-put and delete-delete
 
 app.get('/api/data', (req, res) => {
     console.log("Ini adalah data");
